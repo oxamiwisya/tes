@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="id"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Happy Valentine! 💖</title> 
+  <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffebee;
+            color: #d32f2f;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #d32f2f;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .heart {
+            font-size: 3rem;
+            animation: beat 1s infinite;
+        }
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        button {
+            background-color: #d32f2f;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #b71c1c;
+        }
+        .hidden {
+            display: none;
+        }
+    </style> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <h1>Happy Valentine! 💖</h1> 
+   <p> Hai Sayang,<br> Aku cuma mau bilang terima kasih buat semuanya. Kamu selalu bikin hariku lebih cerah, dan aku ngerasa beruntung bisa deket sama kamu. Semoga kita bisa terus bareng-bareng dan saling mendukung. Aku sayang kamu! </p> 
+   <div class="heart">
+    ❤️
+   </div> <button onclick="showSurprise()">Klik untuk Pesan Kecil</button> 
+   <p id="surprise" class="hidden">Jangan lupa bahagia ya hari ini. hadiahnya nanti yah😊</p> 
+  </div> 
+  <script>
+        function showSurprise() {
+            const surprise = document.getElementById('surprise');
+            const button = document.querySelector('button');
+            surprise.classList.remove('hidden');
+            button.classList.add('hidden');
+        }
+    </script> 
+ 
+<script type="text/javascript" id="dcoder_script">let screen = document.getElementById('calc-screen');
+
+function appendSymbol(symbol) {
+    screen.value += symbol;
+}
+
+function clearScreen() {
+    screen.value = '';
+}
+
+function calculate() {
+    try {
+        screen.value = eval(screen.value.replace(',', '.'));
+    } catch {
+        screen.value = 'Error';
+    }
+}</script></body></html>
